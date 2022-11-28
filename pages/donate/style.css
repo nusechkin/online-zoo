@@ -613,3 +613,774 @@ header .wrapper {
   margin-right: 54px;
   display: inline-block;
 }
+
+
+@media (max-width: 1250px) {
+
+  .pet-card {
+    margin-top: 142px;
+  }
+  .pet-card::after {
+    width: 241px;
+    height: 180px;
+  }
+  .pet-card::before {
+    width: 194px;
+    height: 202px;
+    background-image: url(../../assets/images/pets_left_bg_1000.jpg);
+  }
+
+  .pets-block-slider {
+    padding-right: 0;
+    padding-left: 1px;
+  }
+
+  .button-slider {
+    top: 46.18%;
+  }
+  .slider-prev {
+    left: 34.45%;
+  }
+  .slider-next {
+    right: 34.32%;
+  }
+
+}
+
+@media (max-width: 999px) {
+  .menu-body {
+    margin-left: 0;
+    justify-content: space-between;
+  }
+
+  .backstage-block::after {
+    display: none;
+  }
+  .backstage-block .wrapper {
+    display: flex;
+    padding-top: 140px;
+    justify-content: space-between;
+  }
+  .backstage-image-container {
+    display: none;
+  }
+  .backstage-block article {
+    margin-right: 120px;
+  padding-left: 0;
+  }
+  .backstage-block h2 {
+    margin-top: 0;
+  padding-left: 3px;
+  }
+  .backstage-block h3 {
+    margin: 30px 0 20px;
+  padding-left: 3px;
+  }
+  .backstage-block p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 137%;
+  }
+
+  .row-pets-card:first-child {
+    margin-bottom: 93px;
+  }
+
+  .pets-block-slider {
+    padding-right: 0;
+    padding-left: 1px;
+  }
+
+  .pet-card {
+    margin-top: 142px;
+    width: 31.2%;
+  }
+
+  .pet-card::after {
+    width: 241px;
+    height: 180px;
+  }
+  .pet-card::before {
+    width: 194px;
+    height: 202px;
+    background-image: url(../../assets/images/pets_left_bg_1000.jpg);
+  }
+  .button-slider {
+    top: 46.18%;
+  }
+  .slider-prev {
+    left: 34.45%;
+  }
+  .slider-next {
+    right: 34.32%;
+  }
+  .banana-bamboo {
+    margin-top: -2px;
+    margin-right: 5px;
+  }
+  .meat-fish {
+    margin-right: 1px;
+  }
+}
+
+      @media (max-width: 640px) {
+        .wrapper {
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+  
+        header {
+          position: fixed;
+          left: 0;
+          top: 0;
+          width: 100%;
+          z-index: 10;
+        }
+  
+        header .wrapper {
+          padding-top: 0;
+          padding-bottom: 0;
+        }
+  
+        header .logo {
+          z-index: 5;
+          font-size: 1.23rem;
+          line-height: 120%;
+          width: 47px;
+          border: none;
+          height: 34px;
+          transition: all 0.3s;
+        }
+  
+        .logo:before {
+          left: 6px;
+          bottom: 5px;
+          width: 5px;
+          height: 13px;
+        }
+  
+        .logo.burger-logo {
+          color: #fe9013;
+          border-color: #fe9013;
+          margin: 10px 0 10px -9px;
+          border: 1px solid #fe9013;
+          font-size: 1.52rem;
+          width: 66px;
+          height: auto;
+        }
+  
+        .burger-logo::before {
+          background-image: url(../../assets/icons/burger_bamboo.svg);
+          left: 9px;
+          bottom: 4px;
+          width: 7px;
+          min-height: 21px;
+        }
+  
+        .menu {
+          flex: none;
+          flex-direction: column;
+        }
+  
+        .burger-icon {
+          z-index: 5;
+          display: block;
+          position: relative;
+          width: 38px;
+          height: 34px;
+          cursor: pointer;
+          border: 10px solid transparent;
+          border-bottom-width: 13px;
+          border-top-width: 11px;
+          padding: 5px;
+          right: -10px;
+        }
+  
+        .burger-icon span,
+        .burger-icon::before,
+        .burger-icon::after {
+          left: 0;
+          position: absolute;
+          height: 18%;
+          width: 100%;
+          transition: all 0.3s;
+          background-color: #fff;
+        }
+  
+        .burger-icon::before,
+        .burger-icon::after {
+          content: '';
+        }
+  
+        .burger-icon::before {
+          top: 0;
+        }
+  
+        .burger-icon::after {
+          bottom: 0;
+        }
+  
+        header li a {
+          margin: 0;
+        }
+  
+        .burger-icon span {
+          top: 50%;
+          transform: scale(1) translate(0px, -50%);
+        }
+  
+        .burger-icon._active span,
+        .burger-icon._active::before,
+        .burger-icon._active::after {
+          background-color: #fe9013;
+        }
+  
+        .burger-icon._active span {
+          transform: scale(0) translate(0px, -50%);
+        }
+  
+        .burger-icon._active::before {
+          top: 55%;
+          transform: rotate(-45deg) translate(0px, -50%);
+        }
+  
+        .burger-icon._active::after {
+          top: 45%;
+          transform: rotate(45deg) translate(0px, 50%);
+        }
+  
+        .menu-body {
+          position: fixed;
+          top: 0;
+          left: -100%;
+          margin-left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.65);
+          color: #333b41;
+          align-items: flex-start;
+          text-align: left;
+          overflow: auto;
+          transition: all 0.3s;
+        }
+  
+        .menu-body ul {
+          background-color: #fff;
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          padding-left: 10px;
+          padding-top: 80px;
+          padding-bottom: 25px;
+        }
+  
+        .menu-body._active::before {
+          background-color: #fff;
+        }
+  
+        .menu-body._active {
+          left: 0;
+        }
+  
+        .menu-body._active a {
+          font-weight: 400;
+        }
+  
+        .menu-body li {
+          margin-bottom: 15px;
+        }
+  
+        .watch-block {
+          margin-top: 0;
+          padding-top: 0;
+        }
+  
+        .watch-block::before {
+          height: 373px;
+        }
+  
+        .watch-block .wrapper {
+          height: 373px;
+          display: block;
+        }
+  
+        .watch-body {
+          margin-top: 83px;
+          align-items: center;
+        }
+  
+        .watch-block p {
+          font-size: 5.43rem;
+          width: 255px;
+          margin-right: -3px;
+          align-self: flex-end;
+          margin-bottom: 0;
+        }
+  
+        .watch-block p::before {
+          width: 238px;
+          height: 238px;
+          border-radius: 119px;
+          top: -39px;
+          left: -37px;
+        }
+  
+        .watch-block .button1 {
+          align-self: flex-start;
+          margin-left: 0;
+          margin-top: -7px;
+        }
+  
+        .pets-block {
+          margin-top: 80px;
+          padding-bottom: 102px;
+        }
+  
+        .pet-card {
+          width: 47.55%;
+        }
+  
+        .pets-block-slider {
+          padding-left: 0;
+          margin-bottom: 60px;
+        }
+  
+        .row-pets-card:first-child {
+          margin-bottom: 92px;
+        }
+  
+        .pet-info {
+          padding: 7px 5px 6px 12px;
+        }
+  
+        .pet-name h4 {
+          font-size: 1.247rem;
+        }
+  
+        .pet-name p {
+          font-size: 1.169rem;
+          line-height: 120%;
+        }
+  
+        .banana-bamboo {
+          width: 26px;
+          height: 29px;
+          margin-right: 2px;
+        }
+  
+        .meat-fish {
+          width: 37px;
+          height: 29px;
+        }
+  
+        .button-slider {
+          top: 45.4%;
+        }
+  
+        .slider-next {
+          right: 37.3%;
+        }
+  
+        .slider-prev {
+          left: 37.3%;
+        }
+  
+        .pets-block::before {
+          width: 134px;
+          height: 202px;
+          background: url(../../assets/images/pets_left_bg_640.jpg) 50% no-repeat;
+        }
+  
+        .pets-block::after {
+          width: 175px;
+          height: 131px;
+        }
+  
+        .friend-block {
+          padding: 20px 0;
+        }
+  
+        .friend-block h2 {
+          font-size: 4.2rem;
+          margin-bottom: 20px;
+        }
+  
+        .friend-info p {
+          margin-left: 0;
+        }
+  
+        .friend-info p:first-of-type {
+          font-size: 2.2rem;
+          margin-right: 0;
+          margin-bottom: 19px;
+          line-height: 118%;
+        }
+  
+        .friend-info p:nth-of-type(2) {
+          margin-right: 0;
+          line-height: 132%;
+          margin-bottom: 10px;
+        }
+  
+        .friend-info p:nth-of-type(3) {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 132%;
+          margin-right: 0;
+        }
+  
+        .friend-map {
+          margin-top: 30px;
+        }
+  
+        .feed {
+          margin-top: 20px;
+          padding-right: 12px;
+          margin-bottom: 40px;
+        }
+  
+        .step:nth-of-type(-n + 2) .step-img:after {
+          top: -20px;
+          left: 79.5%;
+        }
+  
+        .testimonials-block {
+          padding-top: 60px;
+          padding-bottom: 80px;
+        }
+  
+        .wrap-window {
+          margin-top: 30px;
+          height: 357px;
+          margin-bottom: 40px;
+        }
+  
+        .stories {
+          flex-direction: column;
+          margin-top: 0;
+        }
+  
+        .wrap-story {
+          margin-right: 0;
+          margin-bottom: 19px;
+          cursor: pointer;
+        }
+  
+        .story {
+          max-height: 105px;
+          min-height: auto;
+          padding: 12px 10px;
+        }
+  
+        .testimonials-block {
+          height: 38px;
+          overflow: hidden;
+          padding-left: 6px;
+          padding-right: 19px;
+        }
+  
+        .range {
+          display: none;
+        }
+  
+        .testimonials-block .button-feedback {
+          margin: 0 auto;
+          display: block;
+          max-width: 240px;
+        }
+  
+        .testimonials-block::after {
+          width: 117px;
+          height: 180px;
+          bottom: -56px;
+          background: url(../../assets/images/testimonials_bg_640.jpg) 50% no-repeat;
+        }
+  
+        .modal {
+          position: fixed;
+          left: 0;
+          top: 0;
+          z-index: 100;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.65);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          overflow-y: auto;
+          overflow-x: hidden;
+        }
+  
+        .modal .modal-close {
+          opacity: 1;
+          visibility: visible;
+          left: 105%;
+          top: -3%;
+          width: 14px;
+          height: 14px;
+          background: url(../../assets/icons/modal-close_icon.svg) 50% no-repeat;
+          background-size: cover;
+          position: absolute;
+          cursor: pointer;
+          z-index: 100;
+        }
+  
+        .modal .story {
+          max-width: 267px;
+          height: 390px;
+          flex: none;
+          max-height: 390px;
+          position: relative;
+          min-height: auto;
+        }
+  
+        .modal .testimonial {
+          height: 306px;
+          padding-right: 6px;
+        }
+      }
+
+
+      @media (max-width: 320px) {
+  
+        .wrapper {
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+  
+        .burger-logo {
+          margin-left: 0px;
+        }
+  
+  
+        .watch-block {
+          margin-top: 33px;
+        }
+  
+        .watch-block .wrapper {
+          overflow: visible;
+        }
+  
+        .watch-block .wrapper,
+        .watch-block::before {
+          height: 188px;
+        }
+  
+        .watch-body {
+          margin-top: 0;
+        }
+  
+        .watch-block p {
+          font-size: 2.8rem;
+          width: 128px;
+          margin-top: 42px;
+          margin-right: 0px;
+        }
+  
+        .watch-block p::before {
+          width: 119px;
+          height: 119px;
+          border-radius: 60px;
+          left: -19px;
+          top: -19px;
+        }
+  
+        .watch-block .button-choose {
+          margin: 0 auto;
+          position: relative;
+          top: 60px;
+          left: 0px;
+          z-index: 2;
+        }
+  
+        .backstage-block::after {
+          width: 31px;
+          height: 217px;
+          top: 38px;
+        }
+  
+        .backstage-block .wrapper {
+          padding-top: 104px;
+        }
+  
+        .backstage-block h2 {
+          font-size: 2.4rem;
+          margin-bottom: 10px;
+          padding-left: 0;
+        }
+  
+        .backstage-block h3 {
+          padding-left: 2px;
+          margin: 20px 0 10px;
+        }
+  
+        .backstage-block article {
+          margin-right: 0;
+          padding-left: 2px;
+          padding-right: 25px;
+        }
+  
+        .next {
+          right: 25%;
+        }
+  
+        .prev {
+          left: 25%;
+        }
+  
+        .logo.burger-logo {
+          margin-left: 0;
+        }
+  
+  
+        .pets-block {
+          margin-top: 39px;
+          padding-bottom: 59px;
+        }
+  
+        .pets-slider {
+          margin-bottom: 20px;
+          padding: 0 7px;
+        }
+  
+        .row-pets-card:first-child {
+          margin-bottom: 0;
+          flex-direction: column;
+        }
+  
+        .pet-card {
+          width: 100%;
+          margin-bottom: 21px;
+        }
+  
+        .pet_card:last-child {
+          margin-bottom: 0;
+        }
+  
+        .pet-cards::before {
+          width: 58px;
+          height: 72px;
+          background: url(../../assets/images/pets_left_bg_320.jpg) 50% no-repeat;
+        }
+  
+        .pets-block::after {
+          width: 68px;
+          height: 62px;
+          background: url(../../assets/images/pets_right_bg_320.jpg) 50% no-repeat;
+        }
+  
+        .button-slider {
+          display: none;
+        }
+  
+        .friend-block {
+          padding: 20px 11px 20px 10px;
+        }
+  
+        .friend-block .wrapper {
+          padding: 20px 0 40px;
+        }
+  
+        .friend-block h2 {
+          font-size: 2.4rem;
+          margin-bottom: 10px;
+          line-height: 122%;
+        }
+  
+        .friend-info {
+          text-align: center;
+        }
+  
+        .friend-info p:first-of-type {
+          font-size: 1.8rem;
+          line-height: 122%;
+          margin-right: 3px;
+        }
+  
+        .friend-info p:nth-of-type(2),
+        .friend-info p:nth-of-type(3) {
+          display: none;
+        }
+  
+        .friend-map {
+          margin-top: 20px;
+        }
+  
+        .friend-map h3 {
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 120%;
+        }
+  
+        .feed {
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center;
+          padding-right: 0;
+          margin-bottom: 29px;
+        }
+  
+        .step {
+          width: 168px;
+          margin-bottom: 19px;
+        }
+  
+        .step:last-child {
+          margin-bottom: 0;
+        }
+  
+        .step:nth-of-type(-n + 2) .step_img:after {
+          top: 95.8%;
+          left: 99.8%;
+          width: 40px;
+          height: 90px;
+          background: url(../../assets/icons/arrow_mobile.svg) 50% no-repeat;
+        }
+  
+        .step:nth-of-type(2) .step_img:after {
+          top: 100.8%;
+          left: 99.8%;
+        }
+  
+        .step:nth-of-type(n + 2) {
+          padding-bottom: 9px;
+        }
+  
+        .step-img {
+          margin-bottom: 9px;
+        }
+  
+        .step-img p {
+          height: 44px;
+        }
+  
+        .testimonials-block {
+          padding-top: 30px;
+          padding-bottom: 60px;
+        }
+  
+        .testimonials-block h3 {
+          font-size: 2.4rem;
+          line-height: 120%;
+        }
+  
+        .wrap-window {
+          margin-top: 20px;
+          margin-bottom: 30px;
+        }
+  
+        .story {
+          padding: 9px 11px 12px;
+        }
+  
+        .story figcaption {
+          margin-left: 5px;
+        }
+  
+        .testimonials-block::after {
+          background-image: url(../../assets/images/testimonials_bg_320.jpg);
+          width: 50px;
+          height: 78px;
+          bottom: -21px;
+        }
+      }
